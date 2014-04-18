@@ -1,0 +1,3 @@
+[submodule "ark"]
+	path = ark
+	url = https://github.com/opscode-cookbooks/ark.git
