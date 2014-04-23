@@ -1,11 +1,5 @@
-## run the required recipes in order
+# fix monitd
 
-include_recipe "apt"
-include_recipe "ark"
-include_recipe "elasticsearch"
-include_recipe "elasticsearch::aws"
-include_recipe "elasticsearch::proxy"
-include_recipe "java"
-include_recipe "layer-custom::allocation-awareness"
-include_recipe "layer-custom::esmonit"
-include_recipe "layer-custom::esplugins"
+link "/etc/monit.d/" do
+	to "/etc/monit/conf.d/"
+end
