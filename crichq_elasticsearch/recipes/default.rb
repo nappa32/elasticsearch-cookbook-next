@@ -5,4 +5,5 @@ bash "fix monit.d" do
 	cd /etc 
 	ln -s /etc/monit/conf.d/ monit.d
 EOH
+ignore_errors true
 end
