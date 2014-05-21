@@ -1,3 +1,4 @@
+
 script "install_plugins" do
 	interpreter "bash"
 	user "root"
@@ -5,8 +6,6 @@ script "install_plugins" do
 	code <<-EOH
 	  ## site plugins 
   	plugin -install royrusso/elasticsearch-HQ
-  	plugin -install lukas-vlcek/bigdesk
-        plugin -install karmi/elasticsearch-paramedic
   	
   	EOH
  	ignore_failure true
